@@ -15,7 +15,7 @@ class Solution:
         #         left = right
         # return max_len
         
-        ### Approach 2 with single linear flow
+        ### Approach 2 with linear flow
         curr_len, result = 1, 1
         len_s = len(s)
         for i in range(len_s-1):
@@ -23,6 +23,6 @@ class Solution:
                 curr_len+=1
                 result = max(result, curr_len)
             else:
-                curr_len =1
+                curr_len = 1
         return result
 
